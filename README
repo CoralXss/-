@@ -1,0 +1,21 @@
+一、命名格式和规范：
+1. 布局文件: activity_xxx \ fragment_xxx \ adapter_item_xxx \ 动态布局：layout_xxx；
+2. color.xml文件，颜色命名：color_色值；如果是一个页面统一颜色，就使用一个颜色，命名为color_英文含义；
+3.
+
+二、第三方库引入
+1. Butterknife 引入步骤：
+   a. 项目 .gradle 文件中 添加依赖：classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
+   b. app.gradle 文件中添加：apply plugin: 'com.jakewharton.butterknife'
+      依赖：compile 'com.jakewharton:butterknife:8.5.1'
+           annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+2. 为 gradle 文件添加统一版本号：项目根目录下添加 config.gradle，并 apply到 项目.gradle文件；
+
+三、BaseRecyclerAdapter功能
+1. 添加 headerView；
+2. 支持加载更多：网格和线性布局管理器均支持；
+3. 可以通过设置选择 是否需要 下拉刷新 / 加载更多 / 分页加载；
+4. 添加任意布局管理 分割线；
+
+

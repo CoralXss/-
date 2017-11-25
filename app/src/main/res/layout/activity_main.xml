@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coral.mobile.live.activity.MainActivity">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <View style="@style/style_common_vertical_view_line" />
+
+    <fragment
+        android:tag="message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_title_bar"
+        android:name="com.coral.mobile.live.fragment.MainFragment"/>
+
+    <ImageView
+        android:id="@+id/iv_start_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn_kaishizhibo"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:visibility="visible"/>
+
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coral.mobile.live.activity.CreateLiveActivity"
+    android:background="@color/color_888888">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_common_page_gap"
+        android:paddingRight="@dimen/dp_common_page_gap">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_cha"
+            android:layout_gravity="right"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="创建直播"
+            android:textSize="@dimen/txt_size_24"
+            android:textColor="@color/color_white"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="63dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="直播内容将在多多经纪APP中同步播放"
+            android:textSize="@dimen/txt_size_14"
+            android:textColor="@color/color_13C6D4"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="36dp"/>
+
+        <EditText
+            android:id="@+id/edt_live_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入直播主题"
+            android:textColorHint="@color/color_white"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_size_17"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/bg_round_rect_edt_white"/>
+
+        <EditText
+            android:id="@+id/edt_live_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="直播开始时间"
+            android:textColorHint="@color/color_white"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/txt_size_17"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/bg_round_rect_edt_white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:text="创建"
+            android:textSize="@dimen/txt_size_17"
+            android:layout_marginBottom="88dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+</FrameLayout>
